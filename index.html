@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia - Ponte a prueba!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- bienvenida, ingresar nombre y selecionar categorias -->
+    <div id="saludo">
+      <h1>¿Quieres probar tus conocimientos?</h1>
+      <img class="yo" src="media/me.gif"/>
+      <br>
+      <h2>Sí, tú!!!</h2>
+      <br>
+      <p>¿Cuál es tu nombre?</p>
+      <img src="media/gato.png", alt="gato"/>
+      <br>
+      <input type="text" id="nombreIngresado">
+      <input type="button" id="Nombre_button" value="¡Que comience el juego!">
+    </div>
+    <div id="categoria">
+      <p id="nombre" class="text"></p>
+      <p>Escoge una categoría</p>
+      <div>
+        <img class="gatomesa" src="media/gatomesa.png"/>
+        <br>
+        <input type="button" id="ComidasChilenas_button" value="Comidas Chilenas">
+      </div>
+      <div>
+        <img class="calila" src="media/calila.png"/>
+        <br>
+        <input type="button" id="Refranes_button" value="Refranes"> 
+      </div>
+    </div>
+
+  <!-- preguntas -->
+    <div id="preguntasComida">
+      <form id="trivia1" name="trivia1">
+        <p>¿Cuál NO es una comida típica chilena?</p>
+        <input type="radio" name="preguntaA1" id="pa1.1" value="Empanada.">Empanada
+        <br>
+        <input type="radio" name="preguntaA1" id="pa1.2" value="Cazuela.">Cazuela
+        <br>
+        <input type="radio" name="preguntaA1" id="pa1.3" value="Arroz con huevo.">Arroz con huevo
+        <br>
+        <br>
+        <p>¿Cuál es una bebida típica chilena?</p>
+        <input type="radio" name="preguntaA2" id="pa2.1" value="Chicha.">Chicha
+        <br>
+        <input type="radio" name="preguntaA2" id="pa2.2" value="Leche con chocolate.">Leche con chocolate
+        <br>
+        <input type="radio" name="preguntaA2" id="pa2.3" value="Café Helado.">Café Helado
+        <br>
+        <br>
+        <p>¿Cuál es un postre típico chileno?</p>
+        <input type="radio" name="preguntaA3" id="pa3.1" value="Helado">Helado
+        <br>
+        <input type="radio" name="preguntaA3" id="pa3.2" value="Flan.">Flan
+        <br>
+        <input type="radio" name="preguntaA3" id="pa3.3" value="Mote con huesillo.">Mote con huesillo
+        <br>
+        <br>
+        <br>
+        <input type="button" value="Resultado" id="resultado1_button">
+      </form>
+    </div>
+  
+    <div id="preguntasRefran">
+      <form id="trivia2" name="trivia2">
+        <p>Quien mucho abarca, ...</p>
+        <input type="radio" name="preguntaB1" id="pb1.1" value="mucho hace.">mucho hace.
+        <br>
+        <input type="radio" name="preguntaB1" id="pb1.2" value="poco aprieta.">poco aprieta.
+        <br>
+        <input type="radio" name="preguntaB1" id="pb1.3" value="poco hace.">poco hace.
+        <br>
+        <br>
+        <p>Preguntando...</p>
+        <input type="radio" name="preguntaB2" id="pb2.1" value="aprendes.">aprendes.
+        <br>
+        <input type="radio" name="preguntaB2" id="pb2.2" value="se consiguen respuestas.">se consiguen respuestas.
+        <br>
+        <input type="radio" name="preguntaB2" id="pb2.3" value="se llega a Roma.">se llega a Roma.
+        <br>
+        <br>
+        <p>Mucho ruido, ...</p>
+        <input type="radio" name="preguntaB3" id="pb3.1" value="pocas nueces.">pocas nueces.
+        <br>
+        <input type="radio" name="preguntaB3" id="pb3.2" value="quien lo aguante">quien lo aguante.
+        <br>
+        <input type="radio" name="preguntaB3" id="pb3.3" value="silencio seguro.">silencio seguro.
+        <br>
+        <br>
+        <br>
+        <input type="button" value="Resultado" id="resultado2_button">
+      </form>
+    </div>
+
+  <!-- ver resultados -->
+    <div id="verResultados">
+      <br>
+      <br>
+      <br>
+      <!-- Aqui llamamos al ver_Resultados -->
+      <p id="ver_Resultados" class="text"></p>
+      <input type="button" id="back_button" value="¡Volver a jugar!">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+    <footer class="pie"> 
+      <ul>
+        <br>
+        <p>"Si tienes miedo, hazlo con miedo".</p>
+        <br>
+        <p>Trivia desarrollada por Anelisse Acevedo y Lia Ramos<p> 
+      </ul>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
